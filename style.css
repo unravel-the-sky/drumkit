@@ -1,0 +1,72 @@
+.main-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.drumkit-holder {
+  max-width: 480px;
+}
+
+.drumkit {
+  width: 600px;
+}
+
+.columns {
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 150px !important;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  flex-direction: column;
+  cursor: pointer;
+  background: #ffffff17;
+  border: 1px white solid;
+}
+
+@media (max-width: 420px) {
+  .column {
+    width: 80px !important;
+    height: 80px;
+  }
+}
+
+h1 {
+  font-family: 'Wendy One', sans-serif;
+}
+
+.playing {
+  transition: all 0.1s ease;
+  background-color: rgba(69, 91, 109, 0.215);
+  transform: scale(0.96);
+}
+
+.playing > p {
+  color: white;
+}
+
+body {
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
+}
+
+@keyframes shiftColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

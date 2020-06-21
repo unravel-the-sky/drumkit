@@ -1,0 +1,26 @@
+.drumkit-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drumkit {
+  width: 600px;
+}
+
+.columns {
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 150px !important;
+  height: 150px;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
